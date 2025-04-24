@@ -19,7 +19,7 @@ body {
   }
 
   .responsive-text-name {
-    max-width: 313px;
+    max-width: 334px;
     font-size: 11px;
   }
 
@@ -28,7 +28,7 @@ body {
     font-size: 10px;
   }
   
-  @media (min-width: 327px) {
+  @media (min-width: 335px) {
     .responsive-text-name {
       font-size: 13.5px;
     }
