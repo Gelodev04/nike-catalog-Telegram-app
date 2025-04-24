@@ -54,5 +54,9 @@ products.forEach((product) => {
       <p class=" responsive-text-price text-[#4A9E14]"><span>Starting from: </span>${product.price}</p>
     `;
 
-  productList.appendChild(li);
+  const a = document.createElement("a");
+  a.href = `productDetails.html?index=${products.indexOf(product)}`; // Replace with actual product link if needed
+  a.appendChild(li);
+
+  productList.appendChild(a);
 });

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Catalog</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+</head>
+<body class="bg-[#F5F5F5]">
+    <header class="py-3 px-4 bg-white">
+        <div class="flex items-center gap-3">
+            <a href="/index.html">
+                <svg class="w-4 h-4" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1.293,12.707a1,1,0,0,1-.216-.325.986.986,0,0,1,0-.764,1,1,0,0,1,.216-.325l8-8a1,1,0,1,1,1.414,1.414L4.414,11H22a1,1,0,0,1,0,2H4.414l6.293,6.293a1,1,0,0,1-1.414,1.414Z"></path></g></svg>
+            </a>
+            <h1 class="font-[500] text-[15px]">Product Details</h1>
+        </div>
+    </header>  
+
+    <div class="p-5 relative">
+        <img id="product-image" class="rounded-md w-[600px] min-h-[200px] object-cover" />
+
+        <div class="mt-2">
+            <h3 class="text-[13.5px] font-semibold">Product Name Goes Here</h3>
+            <div class="flex justify-between items-center mb-3">
+                <p class="text-[#4A9E14] text-[12px]">Starting at: $25.50</p>
+                <img class="w-[80px] object-cover" src="/images/ratings.png" alt="ratings">
+            </div>
+            <p class="text-[12px]">Lorem ipsum dolor sit amet consectetur. Vitae mauris diam montes elementum velit. Mattis in tempor ultricies quam velit tortor.</p>
+
+            <div class="mt-2">
+                <h6 class="text-[12px] text-[#00000080]">More Images</h6>
+                <ul class="flex gap-1 mt-1">
+                    <li>
+                        <img src="/images/products/product2.jpg" class="size-[45px] object-cover rounded" />
+                    </li>
+                    <li>
+                        <img src="/images/products/product2.jpg" class="size-[45px] object-cover rounded" />
+                    </li>
+                    <li>
+                        <img src="/images/products/product2.jpg" class="size-[45px] object-cover rounded" />
+                    </li>
+                    <li>
+                        <img src="/images/products/product2.jpg" class="size-[45px] object-cover rounded" />
+                    </li>
+                    <li>
+                        <img src="/images/products/product2.jpg" class="size-[45px] object-cover rounded" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-[12px] mt-3 space-y-1 pb-12">
+                <p class="text-[#4A9E14]">Available in Size: YES</p>
+                <p class="text-[#EA0707]">Available in Colors: NO</p>
+                <p class="text-[#FFA600]">Shipping To: EVERYWHERE</p>
+            </div>
+
+            <div class="fixed bottom-0 left-0 w-full px-4 pb-4 bg-transparent">
+                <button class="w-full text-white bg-[#4A9E14] rounded-full text-[12px] py-2 shadow-md hover:bg-[hsl(97,78%,30%)] duration-100 ease-out active:bg-[hsl(97,78%,30%)]">
+                  Place An Order
+                </button>
+              </div>
+            
+
+        </div>
+    </div>
+
+    <script src="/js/productDetails.js"></script>
+</body>
+</html>
