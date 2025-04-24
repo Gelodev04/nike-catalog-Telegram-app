@@ -17,3 +17,24 @@ body {
 .group:hover .product-title {
     text-decoration: underline;
   }
+
+  .responsive-text-name {
+    max-width: 313px;
+    font-size: 11px;
+  }
+
+  .responsive-text-price {
+    max-width: 313px;
+    font-size: 10px;
+  }
+  
+  @media (min-width: 327px) {
+    .responsive-text-name {
+      font-size: 13.5px;
+    }
+
+    .responsive-text-price {
+      font-size: 12px;
+    }
+  }
+  
