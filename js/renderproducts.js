@@ -50,7 +50,7 @@ products.forEach((product) => {
 
   li.innerHTML = `
       <div class="overflow-hidden rounded-md  mb-1"><img src="${product.image}" alt="${product.name}" class="w-full  rounded-md  group-hover:scale-[1.1] duration-100 ease-out " /></div>
-      <h3 class="text-[13.5px] font-semibold underline ">${product.name}</h3>
+      <h3 class="text-[13.5px] font-semibold product-title">${product.name}</h3>
       <p class="text-[12px] text-[#4A9E14]"><span>Starting from: </span>${product.price}</p>
     `;
 

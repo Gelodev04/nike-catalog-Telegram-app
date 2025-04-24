@@ -13,3 +13,7 @@ body {
 .underline{
     text-decoration: underline;
 }
+
+.group:hover .product-title {
+    text-decoration: underline;
+  }
