@@ -14,11 +14,11 @@ const products = [
 
   products.forEach(product => {
     const li = document.createElement('li');
-    li.className = "bg-white   rounded ";
+    li.className = "bg-white rounded group cursor-pointer ";
 
     li.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" class="w-full mb-1 rounded-md" />
-      <h3 class="text-[13.5px] font-semibold underline">${product.name}</h3>
+      <div class="overflow-hidden rounded-md  "><img src="${product.image}" alt="${product.name}" class="w-full h-full mb-1 group-hover:scale-[1.1] duration-100 ease-out " /></div>
+      <h3 class="text-[13.5px] font-semibold underline ">${product.name}</h3>
       <p class="text-[12px] text-[#4A9E14]"><span>Starting from: </span>${product.price}</p>
     `;
 
