@@ -1,0 +1,24 @@
+{
+  "name": "shoes-catalog---copy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gelodev04/nike-catalog-Telegram-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gelodev04/nike-catalog-Telegram-app/issues"
+  },
+  "homepage": "https://github.com/Gelodev04/nike-catalog-Telegram-app#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
