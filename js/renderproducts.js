@@ -46,10 +46,10 @@ const productList = document.getElementById("product-list");
 
 products.forEach((product) => {
   const li = document.createElement("li");
-  li.className = "bg-white rounded group cursor-pointer ";
+  li.className = "bg-white  group cursor-pointer ";
 
   li.innerHTML = `
-      <div class="overflow-hidden rounded-md  mb-1"><img src="${product.image}" alt="${product.name}" class="w-full  rounded-md  group-hover:scale-[1.1] duration-100 ease-out " /></div>
+      <div class="overflow-hidden rounded-  mb-1"><img src="${product.image}" alt="${product.name}" class="w-full   group-hover:scale-[1.1] duration-100 ease-out " /></div>
       <h3 class=" responsive-text-name font-semibold product-title">${product.name}</h3>
       <p class=" responsive-text-price text-[#4A9E14]"><span>Starting from: </span>${product.price}</p>
     `;
