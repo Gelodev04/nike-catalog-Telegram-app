@@ -43,7 +43,7 @@ const countries = [
 ];
 
 const select = document.getElementById("country");
-select.innerHTML = '<option value="">Select a country</option>';
+select.innerHTML = '<option value="">🌍Select a country</option>';
 
 countries.forEach(country => {
   const option = document.createElement("option");

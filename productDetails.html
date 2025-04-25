@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#F5F5F5]">
-    <header class="py-3 px-4 bg-white">
+    <header class="py-3 px-2 bg-white">
       <div class="flex items-center gap-3">
         <a href="/index.html">
           <svg
@@ -35,52 +35,44 @@
       </div>
     </header>
 
-    <div class="p-5 relative">
+    <div class="p-2 relative">
       <img
         id="product-image"
         class="rounded-[2px] w-[600px] min-h-[200px] object-cover"
       />
 
-      <div class="my-2">
+      <div class="my-1">
         <!-- Rating Text -->
-        <div class="flex justify-between items-center text-[12px]">
-          <img class="w-[80px]" src="/images/ratings.png" alt="ratings" />
-          <div class="">
-            <span class="text-[10.5px] font-semibold text-gray-800"
-              >⭐4.8 out of 5</span
-            >
-            <span class="text-[10.5px] text-[#0000008a]">(1,245 reviews)</span>
-          </div>
-        </div>
-        <ul class="flex gap-1 mt-2">
+
+        <ul class="flex gap-1 mt-2 justify-between items-center">
           <li>
             <img
               src="/images/products/product1.jpg"
-              class="size-[45px] object-cover rounded-[2px]"
+              class="h-[55px] object-cover rounded-[2px]"
             />
           </li>
           <li>
             <img
               src="/images/products/product1.jpg"
-              class="size-[45px] object-cover rounded-[2px]"
+              class="h-[55px] object-cover rounded-[2px]"
             />
           </li>
           <li>
             <img
               src="/images/products/product1.jpg"
-              class="size-[45px] object-cover rounded-[2px]"
+              class="h-[55px] object-cover rounded-[2px]"
             />
           </li>
           <li>
             <img
               src="/images/products/product1.jpg"
-              class="size-[45px] object-cover rounded-[2px]"
+              class="h-[55px] object-cover rounded-[2px]"
             />
           </li>
           <li>
             <img
               src="/images/products/product1.jpg"
-              class="size-[45px] object-cover rounded-[2px]"
+              class="h-[55px] object-cover rounded-[2px]"
             />
           </li>
         </ul>
@@ -88,61 +80,90 @@
 
       <div class="mt-2">
         <!-- DETAILS -->
-        <div class="border-b border-t py-2 border-gray-300">
-          <h3 class="text-[13.5px] font-semibold">Product Name Goes Here</h3>
-          <p class="text-[#4A9E14] text-[12px]">💸Starting at: $25.50</p>
+        <div class="border-b border-t py-1 border-gray-300">
+          <div class="flex items-center text-[12px] gap-1">
+            <img class="w-[70px]" src="/images/ratings.png" alt="ratings" />
+            <div class="">
+              <span class="text-[9.6px] font-medium text-gray-800"
+                >Rated 4.9/5 by 1000+ Happy Customers</span
+              >
+            </div>
+          </div>
+          <h3 class="text-[13.5px] font-semibold mt-[2px]">
+            Product Name Goes Here
+          </h3>
+          <p class="text-[15px] py-[2px] text-gray-700">
+            💸Starting at:
+            <span class="font-semibold text-[19px] text-gray-900">$25.50</span>
+          </p>
         </div>
 
         <!-- SIZES -->
-        <div class="mt-2 text-[13px]">
-          <p class="mb-1 font-medium text-gray-700">Sizes Available:</p>
-          <div class="flex gap-3">
-            <button
-              class="w-7 h-7 bg-gray-200 rounded-md text-gray-800 font-semibold hover:bg-gray-300 transition cursor-pointer active:bg-gray-300 "
+        <div class="mt-2 text-[13px] flex gap-1 text-gray-700 items-center">
+          <p class="font-medium">Sizes Available:</p>
+          <ul class="flex gap-2 text-[10px]">
+            <li
+              class="size-3 p-2 bg-gray-200 flex items-center justify-center "
             >
               S
-            </button>
-            <button
-              class="w-7 h-7 bg-gray-200 rounded-md text-gray-800 font-semibold hover:bg-gray-300 transition cursor-pointer active:bg-gray-300 "
+            </li>
+            <li
+              class="size-3 p-2 bg-gray-200 flex items-center justify-center "
             >
               M
-            </button>
-            <button
-              class="w-7 h-7 bg-gray-200 rounded-md text-gray-800 font-semibold hover:bg-gray-300 transition cursor-pointer active:bg-gray-300 "
+            </li>
+            <li
+              class="size-3 p-2 bg-gray-200 flex items-center justify-center "
             >
               L
-            </button>
-            <button
-              class="w-7 h-7 bg-gray-200 rounded-md text-gray-800 font-semibold hover:bg-gray-300 transition cursor-pointer active:bg-gray-300 "
+            </li>
+            <li
+              class="size-3 p-2 bg-gray-200 flex items-center justify-center "
             >
               XL
-            </button>
-          </div>
+            </li>
+            
+          </ul>
         </div>
 
         <!-- Color Available -->
         <div
-          class="mt-2 text-[13px] border-b border-dashed border-gray-300 pb-3"
+          class="text-[13px] border-b border-dashed border-gray-300 flex items-center gap-1 pb-2"
         >
-          <p class="mb-1 font-medium text-gray-700">Colors Available:</p>
+          <p class="font-medium text-gray-700">Colors Available:</p>
           <div class="flex gap-3">
             <!-- Color 1 -->
             <button
-              class="w-6 h-6 rounded-full border-2 border-transparent hover:border-gray-400 transition"
+              class="w-3 h-3"
               style="background-color: #000000"
               aria-label="Black"
             ></button>
 
             <!-- Color 2 -->
             <button
-              class="w-6 h-6 rounded-full border-2 border-transparent hover:border-gray-400 transition"
+              class="w-3 h-3"
               style="background-color: #ff0000"
               aria-label="Red"
             ></button>
 
             <!-- Color 3 -->
             <button
-              class="w-6 h-6 rounded-full border-2 border-transparent hover:border-gray-400 transition"
+              class="w-3 h-3"
+              style="background-color: green"
+              aria-label="Blue"
+            ></button>
+            <button
+              class="w-3 h-3"
+              style="background-color: purple"
+              aria-label="Blue"
+            ></button>
+            <button
+              class="w-3 h-3 border border-gray-300"
+              style="background-color: white"
+              aria-label="Blue"
+            ></button>
+            <button
+              class="w-3 h-3"
               style="background-color: #007bff"
               aria-label="Blue"
             ></button>
@@ -150,7 +171,7 @@
         </div>
 
         <!-- Delivery time -->
-        <div class="flex items-center gap-2 text-[12px] text-gray-700 mt-3">
+        <div class="flex items-center gap-2 text-[11px] text-gray-700  border-b border-dashed border-gray-300 py-1">
           <span
             >🚀Estimated delivery:
             <strong class="text-gray-800">2–4 business days</strong></span
@@ -164,23 +185,23 @@
         </p>
 
         <!-- Where shipping -->
-        <div class="text-[12px] mt-3 space-y-1 pb-11 border-t border-dashed border-gray-300 pt-2">
-          <label
-            for="country"
-            class="block mb-1  font-medium text-gray-700"
-            >🌍Select your country:</label
+        <div
+          class="text-[12px] mt-3 space-y-1 pb-11 border-t border-dashed border-gray-300 pt-2"
+        >
+          <label for="country" class="block mb-1 font-medium text-gray-700"
+            >Where are we shipping to?</label
           >
           <select
             id="country"
-            class="border focus:outline-1  border-gray-300 rounded px-3 py-1  text-gray-600"
+            class="border focus:outline-1 border-gray-300 rounded px-3 py-1 text-gray-600"
           >
             <option value="">Loading countries...</option>
           </select>
         </div>
 
-        <div class="fixed bottom-0 left-0 w-full px-4 pb-2 bg-transparent">
+        <div class="fixed bottom-0 left-0 w-full   bg-transparent">
           <button
-            class="w-full text-white bg-[#4A9E14] rounded-full text-[12px] py-2 shadow-md hover:bg-[hsl(97,78%,30%)] duration-100 ease-out active:bg-[hsl(97,78%,30%)] cursor-pointer"
+            class="w-full text-white bg-[#4A9E14] text-[12px] py-2 shadow-md hover:bg-[hsl(97,78%,30%)] duration-100 ease-out active:bg-[hsl(97,78%,30%)] cursor-pointer"
           >
             🛒Place An Order
           </button>
