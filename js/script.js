@@ -51,3 +51,19 @@ countries.forEach(country => {
   option.textContent = country;
   select.appendChild(option);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const brandItems = document.querySelectorAll('#brandList li');
+
+  brandItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // Remove active class from all items
+      brandItems.forEach(brand => {
+        brand.classList.remove('text-[#EF5601]', 'font-semibold', 'active-brand');
+      });
+
+      // Add active class to clicked item
+      item.classList.add('text-[#EF5601]', 'font-semibold', 'active-brand');
+    });
+  });
+});
