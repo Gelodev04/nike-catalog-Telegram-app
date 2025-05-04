@@ -51,7 +51,7 @@ products.forEach((product) => {
   li.innerHTML = `
       <div class="overflow-hidden rounded-  mb-1"><img src="${product.image}" alt="${product.name}" class="w-full   group-hover:scale-[1.1] duration-100 ease-out " /></div>
       <h3 class=" responsive-text-name font-semibold product-title">${product.name}</h3>
-      <p class=" responsive-text-price text-[#4A9E14]">Starting from: <span class="font-semibold">${product.price}</span></p>
+      <p class=" responsive-text-price text-[#4A9E14]">💸Starting from: <span class="font-semibold">${product.price}</span></p>
     `;
 
   const a = document.createElement("a");
